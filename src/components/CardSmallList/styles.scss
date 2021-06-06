@@ -1,0 +1,13 @@
+.card-small-list_title {
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .cards-grid-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px;
+    padding-bottom: 20px;
+  }
+}

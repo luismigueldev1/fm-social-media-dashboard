@@ -1,0 +1,58 @@
+.card-small {
+  padding: 20px;
+  background-color: var(--background-card);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  min-height: 130px;
+  border-radius: 4px;
+
+  .card-small_page-views {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+      color: var(--text-light);
+    }
+
+    h1 {
+      color: var(--text);
+    }
+  }
+
+  .card-small_network {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card-small_network_box {
+      width: 25px;
+      height: 25px;
+      align-self: flex-end;
+    }
+
+    .card-small_arrow_box {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      p {
+        margin-left: 5px;
+      }
+      p.positive {
+        color: var(--lime-green);
+      }
+
+      p.negative {
+        color: var(--bight-red);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 764px) {
+  .card-small {
+    margin-bottom: 0;
+  }
+}
